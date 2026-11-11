@@ -1,0 +1,2 @@
+﻿sku,name,description,price,currency,category_name,stock,image_url,is_active,isbn,author,publisher,publication_year
+2007,Книга без автора,Описание,1400,RUB,Программирование,2,/images/book3.jpg,true,978-5-17-123456-8,,Издательство,2022

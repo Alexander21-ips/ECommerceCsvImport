@@ -1,0 +1,2 @@
+﻿sku,name,description,price,currency,category_name,stock,image_url,is_active,isbn,author,publisher,publication_year
+2005,Книга без ISBN,Описание,1200,RUB,Программирование,4,/images/book.jpg,true,,Автор А.А.,Издательство,2022

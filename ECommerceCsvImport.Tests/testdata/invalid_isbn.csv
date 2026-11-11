@@ -1,0 +1,2 @@
+﻿sku,name,description,price,currency,category_name,stock,image_url,is_active,isbn,author,publisher,publication_year
+2006,Книга с плохим ISBN,Описание,1300,RUB,Программирование,3,/images/book2.jpg,true,12345,Автор Б.Б.,Издательство,2022

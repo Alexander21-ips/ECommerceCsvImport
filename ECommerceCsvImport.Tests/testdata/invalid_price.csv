@@ -1,0 +1,2 @@
+﻿sku,name,description,price,currency,category_name,stock,image_url,is_active,isbn,author,publisher,publication_year
+2003,Чистый код,Книга,-500,RUB,Программирование,8,/images/cleancode.jpg,true,978-5-17-111111-2,Сидоров С.С.,Вильямс,2021

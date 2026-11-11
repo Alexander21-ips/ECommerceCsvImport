@@ -1,0 +1,2 @@
+﻿sku,name,description,price,currency,category_name,stock,image_url,is_active,isbn,author,publisher,publication_year
+2008,Книга с плохим годом,Описание,1500,RUB,Программирование,6,/images/book4.jpg,true,978-5-17-123456-9,Автор В.В.,Издательство,1800

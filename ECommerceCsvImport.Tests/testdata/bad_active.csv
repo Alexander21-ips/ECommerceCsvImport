@@ -1,0 +1,2 @@
+﻿sku,name,description,price,currency,category_name,stock,image_url,is_active,isbn,author,publisher,publication_year
+2009,Книга с плохим is_active,Описание,1600,RUB,Программирование,7,/images/book5.jpg,yes,978-5-17-123457-0,Автор Г.Г.,Издательство,2022

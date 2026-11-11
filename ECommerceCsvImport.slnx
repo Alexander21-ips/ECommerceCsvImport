@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="ECommerceCsvImport.Tests/ECommerceCsvImport.Tests.csproj" />
+  <Project Path="ECommerceCsvImport/ECommerceCsvImport.csproj" />
+</Solution>

@@ -1,0 +1,61 @@
+﻿@model ECommerceCsvImport.Models.ProductsIndexViewModel
+@{
+    ViewData["Title"] = "Список книг";
+}
+
+<h1>Книги</h1>
+
+<p>Всего товаров: <strong>@Model.TotalCount</strong></p>
+<p>Общая стоимость: <strong>@Model.TotalValue.ToString("N0") RUB</strong></p>
+
+<form method="get" asp-action="Index" class="mb-3 d-flex">
+    <input type="text" name="searchTerm" value="@Model.SearchTerm"
+           class="form-control me-2" placeholder="Поиск по названию..." />
+    <button type="submit" class="btn btn-outline-primary">Найти</button>
+    <a asp-action="Index" class="btn btn-outline-secondary ms-2">Сбросить</a>
+</form>
+
+@if (Model.Products.Count == 0)
+{
+    <div class="alert alert-info">
+        Товары еще не импортированы или не найдены по запросу.
+    </div>
+}
+else
+{
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Артикул</th>
+                <th>Название</th>
+                <th>Цена</th>
+                <th>Категория</th>
+                <th>Остаток</th>
+                <th>Активен</th>
+                <th>ISBN</th>
+                <th>Автор</th>
+                <th>Издательство</th>
+                <th>Год</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model.Products)
+            {
+                <tr>
+                    <td>@product.Sku</td>
+                    <td>@product.Name</td>
+                    <td>@product.Price.ToString("N0") @product.Currency</td>
+                    <td>@product.CategoryName</td>
+                    <td>@product.StockQuantity</td>
+                    <td>@(product.IsActive ? "Да" : "Нет")</td>
+                    <td>@product.Isbn</td>
+                    <td>@product.Author</td>
+                    <td>@product.Publisher</td>
+                    <td>@product.PublicationYear</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<a asp-action="Import" class="btn btn-primary mt-3">Импортировать книги</a>
